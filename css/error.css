@@ -1,0 +1,38 @@
+.wf-loading .not_found{
+visibility: hidden;
+}
+.wf-active .not_found, .wf-inactive .not_found{
+visibility: visible;
+}
+
+#wrapper{
+	overflow: hidden;
+}
+.g_nav {
+    left: 50%;
+    margin-left: -175px;
+}
+
+.not_found{
+	margin: auto;
+	height: 82px;
+	text-align: center;
+	font-size: 22px;
+	letter-spacing: 2px;
+	color: #697073;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.not_found_large{
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	background-color: #ffffff;
+}

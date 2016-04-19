@@ -1,0 +1,134 @@
+.wf-loading .photograph_nav {
+  visibility: hidden;
+}
+
+.wf-active .photograph_nav, .wf-inactive .photograph_nav {
+  visibility: visible;
+}
+
+.g_nav {
+  left: 50%;
+  margin-left: -175px;
+}
+
+.photograph_nav {
+  position: fixed;
+  left: 39px;
+  top: 160px;
+  font-family: "adobe-garamond-pro", serif;
+  color: #686B72;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+.photograph_nav .photograph_new, .photograph_nav .photograph_old {
+  margin-bottom: 18px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+.photograph_nav .photograph_new:hover, .photograph_nav .photograph_old:hover {
+  opacity: 0.5;
+}
+
+.photograph_active {
+  pointer-events: none;
+}
+
+.photograph_new::before, .photograph_old::before {
+  background-color: #b3bac3;
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 10;
+  transition: all .3s ease-in-out;
+  bottom: -3px;
+  height: 2px;
+  left: 0px;
+  width: 0px;
+}
+
+.photograph_active::before {
+  width: 100%;
+}
+
+.number {
+  display: none;
+}
+
+#photograph_wrapper {
+  padding-top: 135px;
+  text-align: center;
+}
+#photograph_wrapper .photograph_block {
+  display: inline-block;
+  width: 65%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#photograph_wrapper .photograph_block .photograph_img {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin: 1%;
+  width: 31.333%;
+  float: left;
+  display: inline-block;
+}
+#photograph_wrapper .photograph_block .photograph_img img {
+  width: 100%;
+}
+
+footer {
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 1300px) {
+  #photograph_wrapper .work_wrap .photograph_block {
+    max-width: 1200px;
+  }
+  #photograph_wrapper .work_wrap .photograph_block .photograph_img {
+    margin: 1%;
+    width: 23%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #photograph_wrapper .photograph_block .photograph_img {
+    margin: 1%;
+    width: 48%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .photograph_nav {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 11px;
+    letter-spacing: 0;
+    top: 0;
+    z-index: 3;
+    padding-top: 28px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  .photograph_nav .photograph_new, .photograph_nav .photograph_old {
+    margin: 0 15px 0 0;
+    display: inline-block;
+  }
+  .photograph_nav .photograph_old {
+    margin: 0;
+  }
+
+  #photograph_wrapper .photograph_block {
+    width: 100%;
+  }
+  #photograph_wrapper .photograph_block .photograph_img {
+    margin: 0 auto 14px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+}

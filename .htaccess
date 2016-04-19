@@ -1,0 +1,29 @@
+DirectoryIndex index.php
+
+Options -Indexes
+
+SetEnv TZ Asia/Tokyo
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.sshohei\.com
+RewriteRule ^(.*) http://sshohei.com/$1 [R=301,L]
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^index.php/(.*) $1 [L]
+</IfModule>
+
+ErrorDocument 400 /400.php
+ErrorDocument 401 /401.php
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+ErrorDocument 503 /503.php
+
+<Files ~ ".(gif|jpe?g|png|ico|otf|ttf|eot|woff)$">
+	Header set Cache-Control "max-age=2592000, public"
+</Files>
+
+<Files ~ ".(css|js|html|gz)$">
+	Header set Cache-Control "max-age=86400, public"
+</Files>
