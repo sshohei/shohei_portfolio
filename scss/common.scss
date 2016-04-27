@@ -5,17 +5,16 @@ $html-left:30px; // 左端からの距離
 $html-navtop:45px; // navの上端からの距離
 $common-fontTop-color:#686B72;
 $common-text-color:#45474C;
-.wf-loading .intro, .wf-loading .tt_work, .wf-loading .tt_photo, .wf-loading .tt_about,
-.wf-loading .more_bt
+
+.wf-loading .intro, .wf-loading .more_bt
 {
 visibility: hidden;
 }
-.wf-active .intro, .wf-inactive .intro, .wf-active .tt_work, wf-inactive .tt_work,
-.wf-active .tt_photo, wf-inactive .tt_photo,.wf-active .tt_about, wf-inactive .tt_about,
+.wf-active .intro, .wf-inactive .intro,
 .wf-active .more_bt, .wf-inactive .more_bt, {
 visibility: visible;
 }
-	// font-family: "adobe-garamond-pro", serif;
+
 html, body{
 	height: 100%;
 	font-family : "heisei-mincho-std", YuMincho, "游明朝", serif;
@@ -32,26 +31,63 @@ html:before,html:after,body:before,body:after{
 html:before{
     height:6px;
     left:0;
-    right:0;
     top:0;
+		animation: borderTop .4s linear 1s normal both;
+		-webkit-animation: borderTop .4s linear 1s normal both;
 }
 html:after{
     width:6px;
     top:0;
     right:0;
     bottom:0;
+		animation: borderRight .4s linear 1.4s normal both;
+		-webkit-animation: borderRight .4s linear 1.4s normal both;
 }
 body:before{
     height:6px;
     right:0;
     bottom:0;
-    left:0;
+		animation: borderBottom .4s linear 1s normal both;
+		-webkit-animation: borderBottom .4s linear 1s normal both;
 }
 body:after{
     width:6px;
-    top:0;
     bottom:0;
     left:0;
+		animation: borderLeft .4s linear 1.4s normal both;
+		-webkit-animation: borderLeft .4s linear 1.4s normal both;
+}
+@keyframes borderTop {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+@-webkit-keyframes borderTop {
+		0% {width: 0;}
+		100% {width: 100%;}
+}
+@keyframes borderRight {
+    0% {height: 0;}
+    100% {height: 100%;}
+}
+@-webkit-keyframes borderRight {
+		0% {height: 0;}
+		100% {height: 100%;}
+}
+@keyframes borderBottom {
+		0% {width: 0;}
+		100% {width: 100%;}
+}
+@-webkit-keyframes borderBottom {
+		0% {width: 0;}
+		100% {width: 100%;}
+}
+@keyframes borderLeft {
+		0% {height: 0;}
+		100% {height: 100%;}
+}
+@-webkit-keyframes borderLeft {
+		0% {height: 0;}
+		100% {height: 100%;}
 }
 
 #wrapper{
@@ -60,13 +96,13 @@ body:after{
 	-webkit-animation: fadeIn .6s ease-in-out .2s normal both;
 }
 @keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @-webkit-keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 header{
 	width: auto;

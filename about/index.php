@@ -4,18 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 <meta name="description" content="グラフィック &amp; Webデザイナー、菅野翔平のポートフォリオサイト。">
-<meta name="keywords" content="菅野翔平,suganoshohei,グラフィックデザイナー,webデザイナー,works">
+<meta name="keywords" content="菅野翔平,suganoshohei,グラフィックデザイナー,Webデザイナー,About">
 <title>Shohei Sugano | About</title>
 <meta property="og:site_name" content="Shohei Sugano">
 <meta property="og:description" content="グラフィック &amp; Webデザイナー、菅野翔平のポートフォリオサイト">
 <meta property="og:url" content="http://sshohei.com/" />
-<meta property="og:image" content="http://sshohei.com/images/top.jpg"/>
+<meta property="og:image" content="http://sshohei.com/img/top.png"/>
 <meta property="og:locale" content="ja_JP" />
-<meta property="og:type" content="">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Shohei Sugano | About"/>
-<meta name="twitter:site" content="@Shohei Sugano">
-<meta name="twitter:creator" content="@Shohei Sugano">
-<meta name="twitter:title" content="Shohei Sugano | About">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@sshousan">
+<meta name="twitter:creator" content="@sshousan">
+<meta name="twitter:title" content="Shohei Sugano">
 <meta name="twitter:description" content="グラフィック &amp; Webデザイナー、菅野翔平のポートフォリオサイト">
 <meta name="twitter:image:src" content="http://sshohei.com/img/top.png">
 <link rel="shortcut icon" href="/img/favicon.ico">
@@ -50,7 +51,7 @@ $(".active").children("img").attr("src",img_url);
 				神奈川県生まれ、東京都在住<br>
 				東京工科大学デザイン学部卒業<br>
 				2014年 パッケージと広告を中心とした制作会社に所属<br>
-				2015年 Webを中心とした製作会社に所属<br>
+				2015年 Webを中心とした制作会社に所属<br>
 				<span class="hobby">趣味 : 木工、写真、スポーツ</span>
 			</div>
 		</div>

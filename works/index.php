@@ -4,18 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 <meta name="description" content="グラフィック &amp; Webデザイナー、菅野翔平のポートフォリオサイト。">
-<meta name="keywords" content="菅野翔平,suganoshohei,グラフィックデザイナー,webデザイナー,works">
+<meta name="keywords" content="菅野翔平,suganoshohei,グラフィックデザイナー,Webデザイナー,Works">
 <title>Shohei Sugano | Works</title>
 <meta property="og:site_name" content="Shohei Sugano">
 <meta property="og:description" content="グラフィック &amp; Webデザイナー、菅野翔平のポートフォリオサイト">
 <meta property="og:url" content="http://sshohei.com/" />
-<meta property="og:image" content="http://sshohei.com/images/top.jpg"/>
+<meta property="og:image" content="http://sshohei.com/img/top.png"/>
 <meta property="og:locale" content="ja_JP" />
-<meta property="og:type" content="">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Shohei Sugano | Works"/>
-<meta name="twitter:site" content="@Shohei Sugano">
-<meta name="twitter:creator" content="@Shohei Sugano">
-<meta name="twitter:title" content="Shohei Sugano | Works">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@sshousan">
+<meta name="twitter:creator" content="@sshousan">
+<meta name="twitter:title" content="Shohei Sugano">
 <meta name="twitter:description" content="グラフィック &amp; Webデザイナー、菅野翔平のポートフォリオサイト">
 <meta name="twitter:image:src" content="http://sshohei.com/img/top.png">
 <link rel="shortcut icon" href="/img/favicon.ico">
@@ -31,7 +32,7 @@
 <div id="filters" class="works_nav">
 	<div data-filter="*" class="works_all">All</div>
 	<div data-filter=".graphic" class="works_graphic">Graphic</div>
-	<div data-filter=".web" class="works_web">Web</div>
+	<!-- <div data-filter=".web" class="works_web">Web</div> -->
 	<div data-filter=".wood" class="works_wood">Wood</div>
 </div>
 <div class="work_wrap clearfix">
@@ -80,9 +81,8 @@
 		</figure>
 	</div>
 </div>
-
-<?php require_once __DIR__ .'/../footer.php'; ?>
 </div><!-- #wrapper -->
+<?php require_once __DIR__ .'/../footer.php'; ?>
 <script src="/js/common.js"></script>
 <script src="/js/jquery.isotope.min.js"></script>
 <script src="/js/works.js"></script>
