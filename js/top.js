@@ -1,5 +1,13 @@
 
 $(function(){
+$( "img.lazy" ).lazyload({
+	threshold: 180,
+	effect: "fadeIn",
+	effect_speed: 200,
+});
+});
+
+$(function(){
 	$('.nav_top').addClass('active');
 	var img_url='/img/nav_top_active.svg';
 	$('.active').children('img').attr('src',img_url);

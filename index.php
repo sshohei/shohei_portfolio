@@ -22,7 +22,6 @@
 <link rel="shortcut icon" href="/img/favicon.ico">
 <link rel="stylesheet" href="/css/common.css">
 <link rel="stylesheet" href="/css/top.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>document.documentElement.className += ' wf-loading';</script>
 </head>
 <body class="clearfix">
@@ -31,7 +30,7 @@
 	<div id="section_top" class="clearfix">
 		<div class="intro">
 			<span class="name" data-txt="Shohei Sugano">Shohei Sugano</span>
-			<span class="job" data-txt="Graphic &amp; Web Desiner">Graphic &amp; Web Desiner</span>
+			<span class="job" data-txt="Graphic &amp; Web Designer">Graphic &amp; Web Designer</span>
 			<span class="description" data-txt="Portfolio Website">Portfolio Website</span>
 		</div>
 		<div class="arrow_down">
@@ -116,21 +115,20 @@
 		</div>
 		<div class="workimg_block clearfix">
 			<a href="/works/#33sqm">
-				<div class="work_img"><img src="/img/works/33sqm01s.jpg" alt="3.3SQM"></div>
+				<div class="work_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/works/33sqm01s.jpg" alt="3.3SQM"></div>
 			</a>
 			<a href="/works/#fourelememts">
-				<div class="work_img"><img src="/img/works/fourelements01s.jpg" alt="Four elements"></div>
+				<div class="work_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/works/fourelements01s.jpg" alt="Four elements"></div>
 			</a>
 			<a href="/works/#kenzya">
-				<div class="work_img"><img src="/img/works/kenzya01s.jpg" alt="賢者の贈り物"></div>
+				<div class="work_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/works/kenzya01s.jpg" alt="賢者の贈り物"></div>
 			</a>
 			<a href="/works/#hitotu">
-				<div class="work_img"><img src="/img/works/hitotu01s.jpg" alt="ひとつ"></div>
+				<div class="work_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/works/hitotu01s.jpg" alt="ひとつ"></div>
 			</a>
 		</div>
 		<a href="/works/" class="more_bt">…</a>
 	</div>
-
 	<div id="section_photo">
 		<div class="tt_block">
 			<div class="tt_photo tt_animation">
@@ -247,22 +245,22 @@
 		</div>
 		<div class="photoimg_block clearfix">
 		<a href="/photograph/">
-			<div class="photo_img"><img src="/img/photograph/photograph01s.jpg" alt="photograph01"></div>
+			<div class="photo_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/photograph/photograph01s.jpg" alt="photograph01"></div>
 		</a>
 		<a href="/photograph/">
-			<div class="photo_img"><img src="/img/photograph/photograph02s.jpg" alt="photograph02"></div>
+			<div class="photo_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/photograph/photograph02s.jpg" alt="photograph02"></div>
 		</a>
 		<a href="/photograph/">
-			<div class="photo_img"><img src="/img/photograph/photograph03s.jpg" alt="photograph03"></div>
+			<div class="photo_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/photograph/photograph03s.jpg" alt="photograph03"></div>
 		</a>
 		<a href="/photograph/">
-			<div class="photo_img"><img src="/img/photograph/photograph04s.jpg" alt="photograph04"></div>
+			<div class="photo_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/photograph/photograph04s.jpg" alt="photograph04"></div>
 		</a>
 		<a href="/photograph/">
-			<div class="photo_img"><img src="/img/photograph/photograph05s.jpg" alt="photograph05"></div>
+			<div class="photo_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/photograph/photograph05s.jpg" alt="photograph05"></div>
 		</a>
 		<a href="/photograph/">
-			<div class="photo_img"><img src="/img/photograph/photograph06s.jpg" alt="photograph06"></div>
+			<div class="photo_img"><img class="lazy" src="/img/common/loading.svg" data-original="/img/photograph/photograph06s.jpg" alt="photograph06"></div>
 		</a>
 		</div>
 		<a href="/photograph/" class="more_bt">…</a>
@@ -317,14 +315,15 @@
 			2015年 Webを中心とした制作会社に所属
 		</div>
 		<div class="about_mail">
-			<a href="mailto:suganoshohei@gmail.com">
+			<a href="mailto:info@sshohei.com">
 				<img src="/img/common/icon_mail_tight.svg" alt="mail">
 			</a>
 		</div>
 	</div>
-
 <?php require_once __DIR__ .'/footer.php'; ?>
 </div><!-- #wrapper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="/js/jquery.lazyload.min.js"></script>
 <script src="/js/common.js"></script>
 <script src="/js/top.js"></script>
 <script src="https://use.typekit.net/rsj8kqt.js"></script>

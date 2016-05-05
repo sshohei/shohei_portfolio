@@ -38,7 +38,7 @@
 			</a>
 		</div>
 		<div class="mail">
-			<a href="mailto:suganoshohei@gmail.com">
+			<a href="mailto:info@sshohei.com">
 				<img src="/img/common/icon_mail.svg" alt="mail">
 			</a>
 		</div>
@@ -78,7 +78,7 @@
 		</a>
 	</div>
 	<div class="mail">
-		<a href="mailto:suganoshohei@gmail.com">
+		<a href="mailto:info@sshohei.com">
 			<img src="/img/common/icon_mail.svg" alt="mail">
 		</a>
 	</div>
