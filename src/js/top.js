@@ -9,7 +9,7 @@ $( "img.lazy" ).lazyload({
 
 $(function(){
 	$('.nav_top').addClass('active');
-	var img_url='/img/nav_top_active.svg';
+	var img_url='/src/img/nav_top_active.svg';
 	$('.active').children('img').attr('src',img_url);
 	$('a.link_top').click(function(){
 		return false;

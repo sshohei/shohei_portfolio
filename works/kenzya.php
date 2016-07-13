@@ -19,6 +19,6 @@
 					小説、「賢者の贈り物」の装丁と装画。<br>
 				</div>
 			</div>
-		<img src="/img/works/kenzya01.jpg" alt="賢者の贈り物1">
-		<img src="/img/works/kenzya02.jpg" alt="賢者の贈り物2">
+		<img src="/src/img/works/kenzya01.jpg" alt="賢者の贈り物1">
+		<img src="/src/img/works/kenzya02.jpg" alt="賢者の贈り物2">
 	</div>

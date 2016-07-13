@@ -16,12 +16,11 @@
 					2013<br>works of school days
 				</div>
 				<div class="works_text">
-					銀座に架空の企業(貸しギャラリー)を想定し、<br>
-					そのロゴデザインとステーショナリーを制作した。<br>
+					貸しギャラリーののロゴデザインとステーショナリー。<br>
 				</div>
 			</div>
-		<img src="/img/works/33sqm01.jpg" alt="3.3SQM1">
-		<img src="/img/works/33sqm03.jpg" alt="3.3SQM3">
-		<img src="/img/works/33sqm04.jpg" alt="3.3SQM4">
-		<img src="/img/works/33sqm02.jpg" alt="3.3SQM2">
+		<img src="/src/img/works/33sqm01.jpg" alt="3.3SQM1">
+		<img src="/src/img/works/33sqm03.jpg" alt="3.3SQM3">
+		<img src="/src/img/works/33sqm04.jpg" alt="3.3SQM4">
+		<img src="/src/img/works/33sqm02.jpg" alt="3.3SQM2">
 	</div>

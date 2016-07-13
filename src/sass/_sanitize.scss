@@ -249,13 +249,15 @@ svg {
 	color: #000000;
 	cursor: default;
 	font: 100%/1.5 sans-serif;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+
 }
 
 /* specify the text decoration of anchors */
 
 a {
 	text-decoration: none;
-	color: #45474C;
+	color: #4d4648;
 }
 
 /* specify the alignment of media elements */
@@ -341,13 +343,11 @@ textarea {
 /* specify the background color, font color, and drop shadow of text selections */
 
 ::-moz-selection {
-	background-color: #b3d4fc; /* required when declaring ::selection */
-	color: #ffffff;
+	background-color: #cbcdd4; /* required when declaring ::selection */
 	text-shadow: none;
 }
 
 ::selection {
-	background-color: #b3d4fc; /* required when declaring ::selection */
-	color: #ffffff;
+	background-color: #cbcdd4; /* required when declaring ::selection */
 	text-shadow: none;
 }

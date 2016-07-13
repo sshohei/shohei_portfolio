@@ -1,6 +1,6 @@
 $(function(){
 $(".nav_photo").addClass("active");
-var img_url="/img/nav_photograph_active.svg";
+var img_url="/src/img/nav_photograph_active.svg";
 $(".active").children("img").attr("src",img_url);
 	$("a.link_photograph").click(function(){
 		return false;
@@ -29,7 +29,7 @@ $(function(){
 	});
 });
 
-$(window).load(function(){
+$(window).on("load",function(){
 	var $grid = $('.photograph_block').isotope({
 	itemSelector: '.photograph_img',
 	layoutMode: 'masonry',

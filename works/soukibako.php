@@ -16,14 +16,14 @@
 					2014<br>work of school days
 				</div>
 				<div class="works_text">
-					人の記憶と感覚を刺激する木箱。<br>
-					箱には、様々な仕掛けがあり、<br>
-					音を聞いたり触れたりすることで、<br>
-					日常の記憶の断片を思い起こす仕組み。
+					人の記憶と感覚を刺激する、知育玩具。<br>
+					木箱には、様々な仕掛けがあり、<br>
+					音を聞いたり触れることで、<br>
+				  日々の記憶の断片を思い起こさせる。
 				</div>
 			</div>
-		<img src="/img/works/souki01.jpg" alt="soukibako1">
-		<img src="/img/works/souki05.jpg" alt="soukibako2">
-		<img src="/img/works/souki03.jpg" alt="soukibako3">
-		<img src="/img/works/souki04.jpg" alt="soukibako4">
+		<img src="/src/img/works/souki01.jpg" alt="soukibako1">
+		<img src="/src/img/works/souki05.jpg" alt="soukibako2">
+		<img src="/src/img/works/souki03.jpg" alt="soukibako3">
+		<img src="/src/img/works/souki04.jpg" alt="soukibako4">
 	</div>

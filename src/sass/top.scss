@@ -1,6 +1,9 @@
 @charset "utf-8";
 $common-fontTop-color: #686B72;
 $common-text-color: #1d1f24;
+body, html{
+  overflow-x: hidden;
+}
 .more_bt:hover {
 	color: #ffffff;
 	background-color: $common-text-color;
@@ -52,17 +55,18 @@ $common-text-color: #1d1f24;
 		position: absolute;
 		left: 32%;
 		bottom: 0;
-		top: 0;
-		height: 90px;
+		top: 85px;
+		height: 180px;
 		font-family: "adobe-garamond-pro", serif;
 		animation: intro 0.7s ease-in-out 2s normal both;
-		-webkit-animation: intro 0.7s ease-in-out 2s normal both;
+    writing-mode: vertical-rl;
 		.name {
 			position: relative;
 			float: left;
 			clear: both;
-			font-size: 26px;
-			letter-spacing: 4px;
+      margin-left: 20px;
+			font-size: 24px;
+			letter-spacing: 12px;
 			color: #949ba7;
 		}
 		.name::after {
@@ -72,8 +76,8 @@ $common-text-color: #1d1f24;
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 39px;
-			clip: rect(0,0,39px,0);
+			height: 100%;
+			clip: rect(0,180px,0,0);
 			animation: name 0.7s ease-in-out 2.5s normal both;
 			-webkit-animation: name 0.7s ease-in-out 2.5s normal both;
 		}
@@ -83,7 +87,7 @@ $common-text-color: #1d1f24;
 			clear: both;
 			font-size: 12px;
 			letter-spacing: 2px;
-			margin: 3px 0 0 1px;
+			margin: 0 0 0 6px;
 			color: #949ba7;
 		}
 		.job::after {
@@ -93,8 +97,8 @@ $common-text-color: #1d1f24;
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 22px;
-			clip: rect(0,0,22px,0);
+			height: 180px;
+			clip: rect(0,180px,0,0);
 			animation: name 0.7s ease-in-out 2.5s normal both;
 			-webkit-animation: name 0.7s ease-in-out 2.5s normal both;
 		}
@@ -104,7 +108,8 @@ $common-text-color: #1d1f24;
 			clear: both;
 			font-size: 12px;
 			letter-spacing: 2px;
-			margin: 20px 0 0 1px;
+      line-height: 1;
+			margin: 2px 12px 0 1px;
 			color: #949ba7;
 		}
 		.description::after {
@@ -114,8 +119,8 @@ $common-text-color: #1d1f24;
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 22px;
-			clip: rect(0,0,22px,0);
+			height: 180px;
+      clip: rect(0,180px,0,0);
 			animation: name 0.7s ease-in-out 2.5s normal both;
 			-webkit-animation: name 0.7s ease-in-out 2.5s normal both;
 		}
@@ -138,50 +143,10 @@ $common-text-color: #1d1f24;
 	}
 	@keyframes name {
 		0% {
-			clip: rect(0,0,39px,0);
+			clip: rect(0,30px,0,0);
 		}
 		100% {
-			clip: rect(0,234px,39px,0);
-		}
-	}
-	@-webkit-keyframes name {
-		0% {
-			clip: rect(0,0,39px,0);
-		}
-		100% {
-			clip: rect(0,234px,39px,0);
-		}
-	}
-	@keyframes job {
-		0% {
-			clip: rect(0,0,22px,0);
-		}
-		100% {
-			clip: rect(0,177px,22px,0);
-		}
-	}
-	@-webkit-keyframes job {
-		0% {
-			clip: rect(0,0,22px,0);
-		}
-		100% {
-			clip: rect(0,177px,22px,0);
-		}
-	}
-	@keyframes description {
-		0% {
-			clip: rect(0,0,22px,0);
-		}
-		100% {
-			clip: rect(0,234px,22px,0);
-		}
-	}
-	@-webkit-keyframes description {
-		0% {
-			clip: rect(0,0,22px,0);
-		}
-		100% {
-			clip: rect(0,234px,22px,0);
+			clip: rect(0,30px,180px,0);
 		}
 	}
 	.arrow_down:hover img {
@@ -207,8 +172,9 @@ $common-text-color: #1d1f24;
 		position: absolute;
 		bottom: 0;
 		right: 0;
+    text-align: right;
 		img {
-			width: 100%;
+			width: 85%;
 		}
 	}
 }
@@ -426,7 +392,7 @@ $common-text-color: #1d1f24;
 	#section_top {
 		.tree img {
 			position: relative;
-			right: -30%;
+			right: 0px;
 			width: 75%;
 		}
 	}
@@ -446,33 +412,29 @@ $common-text-color: #1d1f24;
 	#section_top {
 		.tree img {
 			position: relative;
-			right: 0;
+			right: -30px;
 			width: 100%;
 		}
 		.intro {
-			left: 18%;
-			bottom: auto;
-			top: 160px;
-			height: auto;
-			width: 250px;
-			.name {
-				font-size: 20px;
-				letter-spacing: 4px;
-			}
-			.job {
-				float: left;
-				clear: both;
-				font-size: 11px;
-				letter-spacing: 2px;
-				margin: 3px 0 0;
-			}
-			.description {
-				float: left;
-				clear: both;
-				font-size: 11px;
-				letter-spacing: 2px;
-				margin: 20px 0 0;
-			}
+			top: -100px;
+			// .name {
+			// 	font-size: 20px;
+			// 	letter-spacing: 4px;
+			// }
+			// .job {
+			// 	float: left;
+			// 	clear: both;
+			// 	font-size: 11px;
+			// 	letter-spacing: 2px;
+			// 	margin: 3px 0 0;
+			// }
+			// .description {
+			// 	float: left;
+			// 	clear: both;
+			// 	font-size: 11px;
+			// 	letter-spacing: 2px;
+			// 	margin: 20px 0 0;
+			// }
 		}
 		.arrow_down {
 			display: none;

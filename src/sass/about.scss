@@ -164,18 +164,23 @@ footer{
 @media screen and (max-width: 640px){
 	#about_wrap{
 		margin: 100px auto 0;
-		padding: 0 20px;
+		padding: 0 14px;
 		.profile_img img{
 			width: 100%;
 		}
 		.about_text_block{
 			width: 100%;
-			padding-bottom: 50px;
+			padding-bottom: 20px;
 			.about_text_box{
 				box-sizing: border-box;
 				padding: 20px;
+        position: relative;
 			}
 		}
+    .about_text_block:before {
+      content:"";
+      display: none;
+    }
 	}
 
 }

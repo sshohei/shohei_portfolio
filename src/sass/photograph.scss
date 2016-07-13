@@ -10,11 +10,17 @@ visibility: hidden;
 .wf-active .photograph_nav, .wf-inactive .photograph_nav {
 visibility: visible;
 }
+
+html,body{
+  height: auto;
+}
 .g_nav {
     left: 50%;
     margin-left: -175px;
 }
-
+.icon_block{
+  top: 100px;
+}
 .photograph_nav{
 	position: fixed;
 	left: $html-left + 9px;
@@ -73,8 +79,13 @@ visibility: visible;
 			width: 31.333%;
 			float: left;
 			display: inline-block;
+      }
 			img{
 				width: 100%;
+        transition: all .3s ease;
+        backface-visibility:hidden;
+        &:hover{
+          opacity: 0.8;
 			}
 		}
 	}
@@ -138,7 +149,7 @@ footer{
         margin: 0 auto 14px;
   			width: 100%;
   			box-sizing: border-box;
-  			padding: 0 20px;
+  			padding: 0 14px;
 			}
 		}
 	}

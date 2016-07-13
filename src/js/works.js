@@ -1,12 +1,11 @@
 $(function(){
 $(".nav_work").addClass("active");
-var img_url="/img/nav_works_active.svg";
+var img_url="/src/img/nav_works_active.svg";
 $(".active").children("img").attr("src",img_url);
 	$("a.link_works").click(function(){
 		return false;
 	})
 });
-
 
 $(function(){
 	$(".works_all").addClass("works_active");
@@ -33,14 +32,18 @@ $(function(){
 	function openDetail(){
 		$("#works_detail").load(this.id + "\.php");
 		$("#works_detail").addClass("detail_active");
-		$(".menu_btn").addClass("menu_btn_open");
 		$("#wrapper").removeClass("closeDetail");
 		$("html").css("overflow","hidden");
-		pointY = $(window).scrollTop();
-		$("#wrapper").css({
-			"position": "fixed",
-			"top": -pointY
-		});
+    scrollY = $(window).scrollTop();
+    $('#wrapper').css( {
+        position: 'fixed',
+        width: '100%',
+        top: -1 * scrollY
+    });
+    htmlHeight = $("#wrapper").outerHeight(true);
+    $("html").css({
+      "height": htmlHeight
+    });
  	};
 
 	$("#33sqm").on("click", function(){
@@ -69,15 +72,18 @@ $(function(){
 		$(".line1").removeClass("move1_line");
 		$(".line2").removeClass("move2_line");
 		$("#wrapper").addClass("closeDetail");
-		pointY = $(window).scrollTop();
+    $("html").css({
+      "height": ""
+    });
 		$("#wrapper").css({
 			"position": "relative",
 			"top": ""
 		});
+    $('html, body').prop({scrollTop: scrollY});
 	});
 });
 
-$(window).load(function(){
+$(window).on("load", function(){
 	var $container = $("#workimg_block").isotope();
 	$container.isotope({
 	  itemSelector: ".work_img",
@@ -89,14 +95,3 @@ $(window).load(function(){
 	});
 });
 
-$(function() {
-	var hash = location.hash;
-	if(hash !=null){
-	var worksName = hash.slice(1) ;
-	worksName = "#" + worksName;
-	}
-	if($(worksName).length){
-	$(worksName).trigger("click");
-	console.log(worksName);
-	}
-});

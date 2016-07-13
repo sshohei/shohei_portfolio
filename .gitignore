@@ -1,0 +1,23 @@
+# wordpress ------------------------------
+htdocs/wordpress/*
+!.gitignore
+!htdocs/wordpress/wp-content/
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+htdocs/wordpress/wp-content/*
+!htdocs/wordpress/wp-content/plugins/
+!htdocs/wordpress/wp-content/themes/
+
+# static ------------------------------
+.DS_Store
+
+# sass/scss
+*.cache
+
+# node
+npm-debug.log
+node_modules
+
+_gege
+gege_wall
